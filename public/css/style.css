@@ -1,0 +1,53 @@
+/*.my_content_left{
+	border-right: 1px dashed #333;
+}*/
+
+/*:root{
+	--width: 300px;
+	--height: 100px;
+	--top-color:red;
+	--bottom-color:blue;
+}
+
+.separator{
+	position: relative;
+	width: var(--width);
+	height: var(--height);
+}
+
+.separator::before{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: var(--top-color);
+	clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+
+.separator::after{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: var(--bottom-color);
+	clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+.separator.reverse{
+	transform: rotateY(180deg);
+}
+
+.vertical.seprator.reverse{
+	transform: rotateX(180deg);
+}*/
+
+/*.col-8{
+	transform: rotate(-10deg);
+	transform-origin: 20% 40%;
+}*/
+
+/*.col-8{
+	border-right: 1px solid red;
+	border-right-rotate : rotate(105deg);
+}*/
+
