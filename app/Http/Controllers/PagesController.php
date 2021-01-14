@@ -8,6 +8,7 @@ class PagesController extends Controller
 {
     public function index()
     {
-    	return view('pages.index');
+    	$data = 'homepage';
+    	return view('pages.index')->with('data',$data);
     }
 }
