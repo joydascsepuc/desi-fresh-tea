@@ -60,10 +60,10 @@
 	<div class="separator"></div>
 </section> --}}
 
-<footer>
+{{-- <footer>
 	<div class="row">
 		<div class="col-6">Hello</div>
 		<div class="col-6">Hello2</div>
 	</div>
 	<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000.5 1401"><defs><style>.cls-1{fill:#a2ffb7;stroke:#a2ffb7;stroke-miterlimit:10;}</style></defs><polygon points="3000 1400.5 0 1400.5 0 0.5 2185.57 0.5 3000 0.5 3000 1400.5"/><path class="cls-1" d="M2359.13,0c-799.57,1370.49-821,1400-821,1400H3000V0Z" transform="translate(0 0.5)"/></svg>
-</footer>
+</footer> --}}

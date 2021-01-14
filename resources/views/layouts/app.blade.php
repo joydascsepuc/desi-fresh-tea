@@ -30,6 +30,7 @@
     {{-- Contents --}}
     <div class="container-fluid">
         @include('inc.messages')
+        @include('inc.header')
         @yield('content')
         @include('inc.footer')
     </div>

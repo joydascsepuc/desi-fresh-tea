@@ -51,6 +51,21 @@
 	border-right-rotate : rotate(105deg);
 }*/
 
-#Layer_1{
+/*#Layer_1{
 	position: relative;
+}*/
+
+#header_img{
+	background: url('/storage/website_images/headerImage.jpg') no-repeat center center fixed;
+	/*background: linear-gradient(rgba(255,255,255,0.5)), linear-gradient(rgba(255,255,255,0.5)),url('/storage/website_images/headerImage.jpg') no-repeat center center fixed ;*/
+	/*webkit-filter: blur(5px);
+	-moz-f-ilter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);*/
+}
+
+.headlinks a{
+	text-decoration: none;
+	color: white;
 }
