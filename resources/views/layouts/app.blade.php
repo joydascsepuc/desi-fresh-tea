@@ -19,7 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-    {{-- Custom CSS --}}
+    {{-- Cusotm CSS --}}
     <link rel="stylesheet" type="text/css" href="{{ url('/css/style.css') }}" />
 </head>
 <body>

@@ -20,6 +20,7 @@ use App\Http\Controllers;
 
 /*Pages*/
 Route::get('/', 'App\Http\Controllers\PagesController@index')->name('homePage');
+Route::get('/about', 'App\Http\Controllers\PagesController@about')->name('aboutCompany');
 
 Auth::routes();
 

@@ -11,4 +11,13 @@ class PagesController extends Controller
     	$data = 'homepage';
     	return view('pages.index')->with('data',$data);
     }
+
+    public function about()
+    {
+    	$data = array(
+    		'firstLine' => 'Home',
+    		'secondLine' => 'About Company'
+    	);
+    	return view('pages.web.about')->with('data',$data);
+    }
 }
