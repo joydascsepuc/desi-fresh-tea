@@ -61,4 +61,14 @@ class PagesController extends Controller
         );
         return view('pages.web.faq')->with('data',$data);
     }
+
+    public function gallery()
+    {
+        $data = array(
+            'header' => 'Our Gallery',
+            'firstLine' => 'Home',
+            'secondLine' => "Our Gallery"
+        );
+        return view('pages.web.gallery')->with('data',$data);
+    }
 }

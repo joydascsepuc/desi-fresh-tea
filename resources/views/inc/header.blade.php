@@ -28,13 +28,13 @@
 		    <a href="" class="text-uppercase">product</a>
 		</div>
 		<div class="col-md-1 com-sm-1 headlinks" style="padding-left: 0px; margin-left: 0px;">
-		    <a href="" class="text-uppercase">Gallery</a>
+		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ route('gallery') }}" class="text-uppercase">Gallery</a>
 		</div>
 		<div class="col-md-1 com-sm-1 headlinks" style="padding-left: 0px; margin-left: 0px;">
-		    <a href="{{ route('corporateSocialResponsibilities') }}" class="text-uppercase">csr</a>
+		   &nbsp;&nbsp;&nbsp;&nbsp; <a href="{{ route('corporateSocialResponsibilities') }}" class="text-uppercase">csr</a>
 		</div>
 		<div class="col-md-1 com-sm-1 headlinks" style="padding-left: 0px; margin-left: 0px;">
-		    <a href="" class="text-uppercase">contact</a>
+		    &nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="text-uppercase">contact</a>
 		</div>
 		<div class="col-md-2 col-sm-2"></div>
 	

@@ -165,3 +165,8 @@
 	background-position: center;
 	/*filter: brightness(0.7);*/
 }
+
+.galleryImage{
+	height: 300px;
+	width: 500px;
+}

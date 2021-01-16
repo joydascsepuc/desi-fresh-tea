@@ -25,6 +25,8 @@ Route::get('/brand', 'App\Http\Controllers\PagesController@brand')->name('brand'
 Route::get('/ceomessage', 'App\Http\Controllers\PagesController@ceomessage')->name('ceomessage');
 Route::get('/corporatesr', 'App\Http\Controllers\PagesController@corporatesr')->name('corporateSocialResponsibilities');
 Route::get('/faq', 'App\Http\Controllers\PagesController@faq')->name('frequentlyAskedQuestions');
+Route::get('/gallery', 'App\Http\Controllers\PagesController@gallery')->name('gallery');
+
 
 Auth::routes();
 
