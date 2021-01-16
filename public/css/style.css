@@ -170,3 +170,13 @@
 	height: 300px;
 	width: 500px;
 }
+
+#history_img{
+	background-image: url('/storage/website_images/history.jpg');
+	position:inherit;
+	right: 0;
+	left: 0;
+	background-size:cover;
+	background-position: center;
+	/*filter: brightness(0.7);*/
+}

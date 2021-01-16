@@ -26,6 +26,7 @@ Route::get('/ceomessage', 'App\Http\Controllers\PagesController@ceomessage')->na
 Route::get('/corporatesr', 'App\Http\Controllers\PagesController@corporatesr')->name('corporateSocialResponsibilities');
 Route::get('/faq', 'App\Http\Controllers\PagesController@faq')->name('frequentlyAskedQuestions');
 Route::get('/gallery', 'App\Http\Controllers\PagesController@gallery')->name('gallery');
+Route::get('/history', 'App\Http\Controllers\PagesController@history')->name('historyWithTea');
 
 
 Auth::routes();

@@ -18,7 +18,7 @@
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 		          <a class="dropdown-item" href="{{ route('aboutCompany') }}">-- About Company</a>
-		          <a class="dropdown-item" href="#">-- Our History with Tea</a>
+		          <a class="dropdown-item" href="{{ route('historyWithTea') }}">-- Our History with Tea</a>
 		          <a class="dropdown-item" href="#">-- Vision and Mission</a>
 		          <a class="dropdown-item" href="{{ route('ceomessage') }}">-- CEO's Message</a>
 		        </div>

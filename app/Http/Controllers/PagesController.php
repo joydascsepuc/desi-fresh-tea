@@ -71,4 +71,14 @@ class PagesController extends Controller
         );
         return view('pages.web.gallery')->with('data',$data);
     }
+
+    public function history()
+    {
+        $data = array(
+            'header' => 'Our Story',
+            'firstLine' => 'Home',
+            'secondLine' => "OUR STORY WITH TEA"
+        );
+        return view('pages.web.history')->with('data',$data);
+    }
 }
