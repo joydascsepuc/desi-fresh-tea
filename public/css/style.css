@@ -180,3 +180,23 @@
 	background-position: center;
 	/*filter: brightness(0.7);*/
 }
+
+#mission_img{
+	background-image: url('/storage/website_images/mission.jpg');
+	position:inherit;
+	right: 0;
+	left: 0;
+	background-size:cover;
+	background-position: center;
+	/*filter: brightness(0.7);*/
+}
+
+.missionVision li{
+	color: white;
+	font-size: 1.9rem;
+}
+
+.contactPage input{
+	border: none;
+	border-bottom: 1px solid black;
+}

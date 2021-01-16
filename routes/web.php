@@ -27,6 +27,9 @@ Route::get('/corporatesr', 'App\Http\Controllers\PagesController@corporatesr')->
 Route::get('/faq', 'App\Http\Controllers\PagesController@faq')->name('frequentlyAskedQuestions');
 Route::get('/gallery', 'App\Http\Controllers\PagesController@gallery')->name('gallery');
 Route::get('/history', 'App\Http\Controllers\PagesController@history')->name('historyWithTea');
+Route::get('/ourproduct', 'App\Http\Controllers\PagesController@ourproduct')->name('ourProduct');
+Route::get('/mission', 'App\Http\Controllers\PagesController@mission')->name('missionVision');
+Route::get('/contact', 'App\Http\Controllers\PagesController@contact')->name('contact');
 
 
 Auth::routes();

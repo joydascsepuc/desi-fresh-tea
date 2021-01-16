@@ -81,4 +81,34 @@ class PagesController extends Controller
         );
         return view('pages.web.history')->with('data',$data);
     }
+
+    public function ourproduct()
+    {
+        $data = array(
+            'header' => 'Our Product',
+            'firstLine' => 'Home',
+            'secondLine' => "Product"
+        );
+        return view('pages.web.products')->with('data',$data);
+    }
+
+    public function mission()
+    {
+        $data = array(
+            'header' => 'Our Story',
+            'firstLine' => 'Home',
+            'secondLine' => "Vision and Mission"
+        );
+        return view('pages.web.mission')->with('data',$data);
+    }
+
+    public function contact()
+    {
+        $data = array(
+            'header' => 'Contuct Us',
+            'firstLine' => 'Home',
+            'secondLine' => "Contact Us"
+        );
+        return view('pages.web.contact')->with('data',$data);
+    }
 }
