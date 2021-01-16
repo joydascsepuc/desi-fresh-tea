@@ -145,3 +145,23 @@
 	text-decoration: none;
 	color: black;
 }
+
+#brand_img{
+	background-image: url('/storage/website_images/brand.png');
+	position:inherit;
+	right: 0;
+	left: 0;
+	background-size:cover;
+	background-position: center;
+	/*filter: brightness(0.7);*/
+}
+
+#ceoMessage_img{
+	background-image: url('/storage/website_images/brand.png');
+	position:inherit;
+	right: 0;
+	left: 0;
+	background-size:cover;
+	background-position: center;
+	/*filter: brightness(0.7);*/
+}

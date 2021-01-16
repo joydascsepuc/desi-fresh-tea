@@ -20,7 +20,7 @@
 		          <a class="dropdown-item" href="{{ route('aboutCompany') }}">-- About Company</a>
 		          <a class="dropdown-item" href="#">-- Our History with Tea</a>
 		          <a class="dropdown-item" href="#">-- Vision and Mission</a>
-		          <a class="dropdown-item" href="#">-- CEO's Message</a>
+		          <a class="dropdown-item" href="{{ route('ceomessage') }}">-- CEO's Message</a>
 		        </div>
 		    </li>
 		</div>
@@ -31,7 +31,7 @@
 		    <a href="" class="text-uppercase">Gallery</a>
 		</div>
 		<div class="col-md-1 com-sm-1 headlinks" style="padding-left: 0px; margin-left: 0px;">
-		    <a href="" class="text-uppercase">csr</a>
+		    <a href="{{ route('corporateSocialResponsibilities') }}" class="text-uppercase">csr</a>
 		</div>
 		<div class="col-md-1 com-sm-1 headlinks" style="padding-left: 0px; margin-left: 0px;">
 		    <a href="" class="text-uppercase">contact</a>
