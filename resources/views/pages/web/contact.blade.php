@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+	{{-- Address & Contact Form System --}}
 	<div class="" id="brand_img" style="min-height: 100vh;">
 		<div style="padding: 7rem;">
 			<div class="row">
@@ -44,4 +45,6 @@
 			</div>
 		</div>
 	</div>
+	{{-- Google Map Section --}}
+	
 @endsection
