@@ -1,13 +1,14 @@
 @extends('layouts.app')
 @section('content')
-	<div class="" id="about_img" style="">
-		<div class="row">
-			<div class="col-md-2 col-sm-2"></div>
-			<div class="col-md-10 col-sm-10">
+	<div class="" id="about_img" style="min-height: 150vh;">
+
+		<div class="row" style="padding-top: 8rem;">
+			<div class="col-md-1 col-sm-1"></div>
+			<div class="col-md-7 col-sm-7">
 				<h5 class="text-uppercase" style="color: green; font-size: 2.5rem;">ABOUT COMPANY</h5>
-				<h2 class="text-uppercase" style="color: black; font-size: 4.5rem;">Deshi Fresh Tea</h2>
+				<h2 class="text-uppercase" style="color: black; font-size: 3.5rem;">Deshi Fresh Tea</h2>
 				<br>
-				<p style="color: black; font-size: 2rem; font-style: italic;">
+				<p style="color: black; font-size: 1.5rem; font-style: italic;">
 					Deshi Fresh Tea is dedicated to produce high quality fresh tea for
 					you. We like to offer you feelings like a sweet dream when you
 					have a sip on a cup of Deshi Fresh Tea.It is the blend making tea
@@ -20,6 +21,7 @@
 					to make its business sustainable since our journey
 				</p>
 			</div>
+			<div class="col-md-3 col-sm-3"></div>
 		</div>
 	</div>
 @endsection

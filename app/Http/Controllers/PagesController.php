@@ -15,6 +15,7 @@ class PagesController extends Controller
     public function about()
     {
     	$data = array(
+            'header' => 'OUR STORY',
     		'firstLine' => 'Home',
     		'secondLine' => 'About Company'
     	);
