@@ -1,10 +1,12 @@
 <div class="" id="header_img" style="min-height: 150vh;">
-	<div class="text-center" style="filter: brightness(1);">
+	<div class="text-center" style="">
+		<br><br><br><br>
 		<a href="">
 			<img src="/storage/website_images/mainLogo.png" class="" style="width: 220px; height: 220px;">
 		</a>
 	</div>
-	<div class="row text-center" style="font-size: 1.2rem; font-weight: bold;">	
+	<br><br><br><br>
+	<div class="row text-center" style="font-size: 1.3rem; font-weight: bold;">	
 		<div class="col-md-2 col-sm-2 headlinks"></div>
 		<div class="col-md-1 col-sm-1 headlinks" style="margin: 0; padding: 0;">
 			<a href="{{ route('homePage') }}" class="text-uppercase">HOME</a>
@@ -37,7 +39,7 @@
 		<div class="col-md-2 col-sm-2"></div>
 	
 	</div>
-	<br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br>
 	<?php if($data == 'homepage'){?>
 		<div class="text-center">
 			<h4 class="text-uppercase" style="font-size: 4.6rem; color: white; font-weight: bold;">WITH HIGH QUALITY, STANDARD</h4>

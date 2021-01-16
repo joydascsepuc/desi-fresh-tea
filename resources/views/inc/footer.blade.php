@@ -54,7 +54,8 @@
 					<div class="col-md-3 col-sm-4"></div>
 					<div class="col-md-6 col-sm-4">
 						<p style="color: white; font-size: 14px; font-weight: bold;">
-							Copyright @ 2021 - Deshi Fresh Tea | All Rights Reserved
+							<?php $year = date('Y'); ?>
+							Copyright @ <?=$year;?> - Deshi Fresh Tea | All Rights Reserved
 						</p>
 					</div>
 					<div class="col-md-3 col-sm-4"></div>
@@ -65,8 +66,28 @@
 				<br><br><br><br><br><br><br><br><br><br><br><br>
 				<p style="color: white; font-size: 2rem;">Facebook Link</p>
 				<br><br><br><br><br><br>
-				<p style="color: white; font-size: 1.2rem;">Developed By - Hotchpotch Innovations Limited</p>
-
+				<p style="color: white; font-size: 1.1rem;">Developed By - Hotchpotch Innovations Limited</p>
+				<br><br><br>
+				<div class="row" id="footerLinks2">
+					<div class="col-md-8 col-sm-8">
+						<a href="">
+							<i class="fab fa-youtube fa-2x"></i> &nbsp;&nbsp;
+						</a>
+						<a href="">
+							<i class="fab fa-facebook fa-2x"></i> &nbsp;&nbsp;
+						</a>
+						<a href="">
+							<i class="fab fa-twitter fa-2x"></i> &nbsp;&nbsp;
+						</a>
+						<a href="">
+							<i class="fab fa-linkedin fa-2x"></i> &nbsp;&nbsp;
+						</a>
+						<a href="">
+							<i class="fab fa-instagram fa-2x"></i>
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-2"></div>
+				</div>
 			</div>
 		</div>
 	</div>
