@@ -3,6 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Faq;
+use App\Models\Gallery;
+use App\Models\History;
+use App\Models\Mission;
+use App\Models\Vision;
+use App\Models\Product;
+use App\Models\WebsiteContent;
 
 class PagesController extends Controller
 {
@@ -18,6 +25,7 @@ class PagesController extends Controller
 
     public function about()
     {
+        $content = WebsiteContent::find(1);
         $justify = 'frontend';
     	$data = array(
             'header' => 'OUR STORY',
@@ -26,7 +34,8 @@ class PagesController extends Controller
     	);
     	return view('pages.web.about')->with(array(
             'data' => $data,
-            'justify' =>$justify
+            'justify' =>$justify,
+            'content' => $content
         ));
     }
 
@@ -46,6 +55,7 @@ class PagesController extends Controller
 
     public function ceomessage()
     {
+        $content = WebsiteContent::find(1);
         $justify = 'frontend';
         $data = array(
             'header' => 'Our Story',
@@ -54,12 +64,14 @@ class PagesController extends Controller
         );
         return view('pages.web.ceomessage')->with(array(
             'data' => $data,
-            'justify' =>$justify
+            'justify' =>$justify,
+            'content' => $content
         ));
     }
 
     public function corporatesr()
     {
+        $content = WebsiteContent::find(1);
         $justify = 'frontend';
         $data = array(
             'header' => 'Corporate Social Responsibility',
@@ -68,12 +80,14 @@ class PagesController extends Controller
         );
         return view('pages.web.corporateSR')->with(array(
             'data' => $data,
-            'justify' =>$justify
+            'justify' =>$justify,
+            'content' => $content
         ));
     }
 
     public function faq()
     {
+        $faqs = Faq::orderBy('created_at','desc')->get();
         $justify = 'frontend';
         $data = array(
             'header' => 'FAQ',
@@ -82,12 +96,15 @@ class PagesController extends Controller
         );
         return view('pages.web.faq')->with(array(
             'data' => $data,
-            'justify' =>$justify
+            'justify' =>$justify,
+            'faqs' => $faqs
         ));
     }
 
+    /*Baki Ache --- Deal Later*/
     public function gallery()
     {
+        $images = Gallery::orderBy('created_at','desc')->take(12)->get();
         $justify = 'frontend';
         $data = array(
             'header' => 'Our Gallery',
@@ -96,12 +113,14 @@ class PagesController extends Controller
         );
         return view('pages.web.gallery')->with(array(
             'data' => $data,
-            'justify' =>$justify
+            'justify' =>$justify,
+            'images' => $images
         ));
     }
 
     public function history()
     {
+        $points = History::orderBy('created_at','desc')->get();
         $justify = 'frontend';
         $data = array(
             'header' => 'Our Story',
@@ -110,10 +129,12 @@ class PagesController extends Controller
         );
         return view('pages.web.history')->with(array(
             'data' => $data,
-            'justify' =>$justify
+            'justify' =>$justify,
+            'points' => $points
         ));
     }
 
+    /*Gonna Deal Later*/
     public function ourproduct()
     {
         $justify = 'frontend';
@@ -130,6 +151,8 @@ class PagesController extends Controller
 
     public function mission()
     {
+        $missions = Mission::orderBy('created_at','desc')->get();
+        $visions = Vision::orderBy('created_at','desc')->get();
         $justify = 'frontend';
         $data = array(
             'header' => 'Our Story',
@@ -138,7 +161,9 @@ class PagesController extends Controller
         );
         return view('pages.web.mission')->with(array(
             'data' => $data,
-            'justify' =>$justify
+            'justify' =>$justify,
+            'missions' => $missions,
+            'visions' => $visions
         ));
     }
 
