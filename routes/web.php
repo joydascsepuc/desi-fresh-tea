@@ -39,6 +39,8 @@ Route::resource('product','App\Http\Controllers\ProductController');
 Route::resource('faq','App\Http\Controllers\FaqController');
 Route::resource('mission','App\Http\Controllers\MissionController');
 Route::resource('vision','App\Http\Controllers\VisionController');
+Route::resource('historya','App\Http\Controllers\HistoryController');
+Route::resource('gallerya','App\Http\Controllers\GalleryController');
 
 
 Auth::routes();

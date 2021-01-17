@@ -18,7 +18,7 @@
                     <a class="nav-link" href="/product">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Gallery</a>
+                    <a class="nav-link" href="/gallerya">Gallery</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/faq">FAQs'</a>
@@ -30,7 +30,7 @@
                     <a class="nav-link" href="/vision">Visions</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">History With Tea</a>
+                    <a class="nav-link" href="/historya">History With Tea</a>
                 </li>
             </ul>
 
