@@ -26,13 +26,13 @@
 							<div class="col-md-3 col-sm-3">
 								<a href="#">Blog</a><br>
 								<a href="#">BSTI</a><br>
-								<a href="#">FAQ</a>
+								<a href="{{ route('frequentlyAskedQuestions') }}">FAQ</a>
 							</div>
 							<div class="col-md-4 col-sm-4">
 								<a href="#">Web Mail</a><br>
-								<a href="#">Admin Login</a><br>
+								<a href="{{ route('login') }}">Admin Login</a><br>
 								<a href="#">Downloads</a><br>
-								<a href="#">Brand</a>
+								<a href="{{ route('brand') }}">Brand</a>
 							</div>
 							<div class="col-md-5 col-sm-5"></div>
 						</div>

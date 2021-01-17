@@ -30,9 +30,16 @@
     {{-- Contents --}}
     <div class="container-fluid">
         @include('inc.messages')
-        @include('inc.header')
+        {{-- Show only for frontend --}}
+        <?php if($justify != 'adminWork'){?>
+            @include('inc.header')
+        <?php }else{ ?>
+            @include('inc.nav')
+        <?php }?>
         @yield('content')
-        @include('inc.footer')
+        <?php if($justify != 'adminWork'){?>
+            @include('inc.footer')
+        <?php }?>
     </div>
         
   

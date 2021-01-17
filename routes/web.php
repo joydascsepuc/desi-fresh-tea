@@ -32,6 +32,12 @@ Route::get('/mission', 'App\Http\Controllers\PagesController@mission')->name('mi
 Route::get('/contact', 'App\Http\Controllers\PagesController@contact')->name('contact');
 
 
+/*Admin's Routes*/
+Route::get('/adminHome', 'App\Http\Controllers\AdminController@index')->name('adminHome');
+Route::resource('website','App\Http\Controllers\WebsiteController');
+Route::resource('product','App\Http\Controllers\ProductController');
+
+
 Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

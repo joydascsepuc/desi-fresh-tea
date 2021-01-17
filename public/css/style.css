@@ -80,6 +80,10 @@
 	filter: brightness(0.7);
 }
 
+#header_img div{
+	filter: brightness(1);
+}
+
 .headlinks a{
 	text-decoration: none;
 	color: white;
