@@ -24,11 +24,11 @@ Route::get('/about', 'App\Http\Controllers\PagesController@about')->name('aboutC
 Route::get('/brand', 'App\Http\Controllers\PagesController@brand')->name('brand');
 Route::get('/ceomessage', 'App\Http\Controllers\PagesController@ceomessage')->name('ceomessage');
 Route::get('/corporatesr', 'App\Http\Controllers\PagesController@corporatesr')->name('corporateSocialResponsibilities');
-Route::get('/faq', 'App\Http\Controllers\PagesController@faq')->name('frequentlyAskedQuestions');
+Route::get('/wfaq', 'App\Http\Controllers\PagesController@faq')->name('frequentlyAskedQuestions');
 Route::get('/gallery', 'App\Http\Controllers\PagesController@gallery')->name('gallery');
 Route::get('/history', 'App\Http\Controllers\PagesController@history')->name('historyWithTea');
 Route::get('/ourproduct', 'App\Http\Controllers\PagesController@ourproduct')->name('ourProduct');
-Route::get('/mission', 'App\Http\Controllers\PagesController@mission')->name('missionVision');
+Route::get('/missions', 'App\Http\Controllers\PagesController@mission')->name('missionVision');
 Route::get('/contact', 'App\Http\Controllers\PagesController@contact')->name('contact');
 
 

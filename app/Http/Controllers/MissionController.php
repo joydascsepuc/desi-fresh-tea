@@ -12,6 +12,11 @@ class MissionController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $justify = 'adminWork';

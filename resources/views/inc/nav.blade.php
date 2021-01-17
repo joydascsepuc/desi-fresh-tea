@@ -9,31 +9,33 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
-            <ul class="navbar-nav mr-auto font-weight-bold">
-                {{-- Admin's Actions --}}
-                <li class="nav-item">
-                    <a class="nav-link" href="/website/1/edit">Update Website Contents</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/product">Products</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/gallerya">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/faq">FAQs'</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/mission">Missions</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/vision">Visions</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/historya">History With Tea</a>
-                </li>
-            </ul>
-
+            @guest
+            @else
+                <ul class="navbar-nav mr-auto font-weight-bold">
+                    {{-- Admin's Actions --}}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/website/1/edit">Update Website Contents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/product">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/gallerya">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/faq">FAQs'</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/mission">Missions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/vision">Visions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/historya">History With Tea</a>
+                    </li>
+                </ul>
+            @endguest
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
