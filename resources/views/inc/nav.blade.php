@@ -21,13 +21,13 @@
                     <a class="nav-link" href="">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">FAQs'</a>
+                    <a class="nav-link" href="/faq">FAQs'</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Missions</a>
+                    <a class="nav-link" href="/mission">Missions</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Visions</a>
+                    <a class="nav-link" href="/vision">Visions</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="">History With Tea</a>

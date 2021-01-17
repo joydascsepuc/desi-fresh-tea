@@ -36,6 +36,9 @@ Route::get('/contact', 'App\Http\Controllers\PagesController@contact')->name('co
 Route::get('/adminHome', 'App\Http\Controllers\AdminController@index')->name('adminHome');
 Route::resource('website','App\Http\Controllers\WebsiteController');
 Route::resource('product','App\Http\Controllers\ProductController');
+Route::resource('faq','App\Http\Controllers\FaqController');
+Route::resource('mission','App\Http\Controllers\MissionController');
+Route::resource('vision','App\Http\Controllers\VisionController');
 
 
 Auth::routes();
