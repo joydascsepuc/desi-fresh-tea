@@ -30,6 +30,7 @@ Route::get('/history', 'App\Http\Controllers\PagesController@history')->name('hi
 Route::get('/ourproduct', 'App\Http\Controllers\PagesController@ourproduct')->name('ourProduct');
 Route::get('/missions', 'App\Http\Controllers\PagesController@mission')->name('missionVision');
 Route::get('/contact', 'App\Http\Controllers\PagesController@contact')->name('contact');
+Route::get('/ourstory', 'App\Http\Controllers\PagesController@ourstory')->name('ourstory');
 
 
 /*Admin's Routes*/

@@ -15,11 +15,52 @@ class PagesController extends Controller
 {
     public function index()
     {
+        /*All in One in Home Page*/
+        $content = WebsiteContent::find(1);
+        $faqs = Faq::orderBy('created_at','desc')->get();
+        $images = Gallery::orderBy('created_at','asc')->take(12)->get()->toArray();
+        $points = History::orderBy('created_at','desc')->take(8)->get();
+        $products = Product::orderBy('created_at','asc')->take(6)->get()->toArray();
+        $missions = Mission::orderBy('created_at','desc')->take(4)->get();
+        $visions = Vision::orderBy('created_at','desc')->take(4)->get();
+
+
+
         $justify = 'frontend';
     	$data = 'homepage';
     	return view('pages.index')->with(array(
             'data' => $data,
-            'justify' =>$justify
+            'justify' =>$justify,
+            /*All data from db to show on the front page-----All in One-----Joy Das*/
+            'content' => $content,
+            'faqs' => $faqs,
+            'images' => $images,
+            'points' => $points,
+            'products' => $products,
+            'missions' => $missions,
+            'visions' => $visions
+        ));
+    }
+
+    public function ourstory()
+    {
+        $content = WebsiteContent::find(1);
+        $points = History::orderBy('created_at','desc')->get();
+        $missions = Mission::orderBy('created_at','desc')->get();
+        $visions = Vision::orderBy('created_at','desc')->get();
+        $justify = 'frontend';
+        $data = array(
+            'header' => 'OUR STORY',
+            'firstLine' => 'Home',
+            'secondLine' => 'About Company'
+        );
+        return view('pages.web.ourstory')->with(array(
+            'data' => $data,
+            'justify' =>$justify,       
+            'content' => $content,
+            'points' => $points,
+            'missions' => $missions,
+            'visions' => $visions
         ));
     }
 
@@ -101,10 +142,9 @@ class PagesController extends Controller
         ));
     }
 
-    /*Baki Ache --- Deal Later*/
     public function gallery()
     {
-        $images = Gallery::orderBy('created_at','desc')->take(12)->get();
+        $images = Gallery::orderBy('created_at','asc')->take(12)->get()->toArray();
         $justify = 'frontend';
         $data = array(
             'header' => 'Our Gallery',
@@ -120,7 +160,7 @@ class PagesController extends Controller
 
     public function history()
     {
-        $points = History::orderBy('created_at','desc')->get();
+        $points = History::orderBy('created_at','asc')->take(8)->get();
         $justify = 'frontend';
         $data = array(
             'header' => 'Our Story',
@@ -134,9 +174,9 @@ class PagesController extends Controller
         ));
     }
 
-    /*Gonna Deal Later*/
     public function ourproduct()
     {
+        $products = Product::orderBy('created_at','asc')->take(6)->get()->toArray();
         $justify = 'frontend';
         $data = array(
             'header' => 'Our Product',
@@ -145,14 +185,15 @@ class PagesController extends Controller
         );
         return view('pages.web.products')->with(array(
             'data' => $data,
-            'justify' =>$justify
+            'justify' =>$justify,
+            'products' => $products
         ));
     }
 
     public function mission()
     {
-        $missions = Mission::orderBy('created_at','desc')->get();
-        $visions = Vision::orderBy('created_at','desc')->get();
+        $missions = Mission::orderBy('created_at','desc')->take(4)->get();
+        $visions = Vision::orderBy('created_at','desc')->take(4)->get();
         $justify = 'frontend';
         $data = array(
             'header' => 'Our Story',

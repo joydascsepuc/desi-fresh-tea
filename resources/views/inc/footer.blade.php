@@ -66,24 +66,24 @@
 				<br><br><br><br><br><br><br><br><br><br><br><br>
 				<p style="color: white; font-size: 2rem;">Facebook Link</p>
 				<br><br><br><br><br><br>
-				<p style="color: white; font-size: 1.1rem;">Developed By - Hotchpotch Innovations Limited</p>
+				<p style="color: white; font-size: 1.1rem;">Developed By - SoftSource Software Limited</p>
 				<br><br><br>
 				<div class="row" id="footerLinks2">
 					<div class="col-md-8 col-sm-8">
 						<a href="">
-							<i class="fab fa-youtube fa-2x"></i> &nbsp;&nbsp;
+							<i class="fab fa-youtube fa-3x"></i> &nbsp;
 						</a>
 						<a href="">
-							<i class="fab fa-facebook fa-2x"></i> &nbsp;&nbsp;
+							<i class="fab fa-facebook fa-3x"></i> &nbsp;
 						</a>
 						<a href="">
-							<i class="fab fa-twitter fa-2x"></i> &nbsp;&nbsp;
+							<i class="fab fa-twitter fa-3x"></i> &nbsp;
 						</a>
 						<a href="">
-							<i class="fab fa-linkedin fa-2x"></i> &nbsp;&nbsp;
+							<i class="fab fa-linkedin fa-3x"></i> &nbsp;
 						</a>
 						<a href="">
-							<i class="fab fa-instagram fa-2x"></i>
+							<i class="fab fa-instagram fa-3x"></i>
 						</a>
 					</div>
 					<div class="col-md-2 col-sm-2"></div>

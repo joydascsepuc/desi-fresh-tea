@@ -1,7 +1,6 @@
 @extends('layouts.app')
 @section('content')
 	<img src="/storage/website_images/faq.png" style="height: 350px; width: 100%;">
-
 	<?php foreach($faqs as $faq): ?>
 		{{-- Question Part --}}
 		<div class="row" style="background-color: #37B34A; margin-right: 0px; margin-left: 0px; padding: 30px;">

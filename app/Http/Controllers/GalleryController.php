@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Gallery;
+use Illuminate\Support\Facades\Storage;
 
 class GalleryController extends Controller
 {
@@ -21,7 +22,7 @@ class GalleryController extends Controller
     public function index()
     {
         $justify = 'adminWork';
-        $galleries = Gallery::orderBy('created_at','desc')->get();
+        $galleries = Gallery::orderBy('created_at','asc')->get();
         return view('pages.admin.gallery.index')->with(array(
             'justify' => $justify,
             'galleries' => $galleries
@@ -48,7 +49,7 @@ class GalleryController extends Controller
     public function store(Request $request)
     {
        $this->validate($request,[
-            'image_name' => 'image|max:1999|required'
+            'image_name' => 'required|max:5120|mimes:jpeg,png,jpg,gif,svg|image'
         ]);
 
        //Handle File Upload
@@ -112,7 +113,7 @@ class GalleryController extends Controller
     public function update(Request $request, $id)
     {
         $this->validate($request,[
-            'image_name' => 'image|max:1999|required'
+            'image_name' => 'required|max:5120|mimes:jpeg,png,jpg,gif,svg|image'
         ]);
 
        //Handle File Upload
@@ -133,6 +134,7 @@ class GalleryController extends Controller
         }
 
         $post = Gallery::Find($id);
+        Storage::delete('public/gallery/'.$post['image_name']);
         $post->image_name = $fileNameToStore;
         $post->save();
 
@@ -148,6 +150,7 @@ class GalleryController extends Controller
     public function destroy($id)
     {
         $data = Gallery::Find($id);
+        Storage::delete('public/gallery/'.$data['image_name']);
         $data->delete();
         return redirect('/gallerya')->with('success','Gallery Image Deleted Successfully..');
     }

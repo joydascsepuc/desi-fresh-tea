@@ -39,7 +39,7 @@
 		<div class="col-md-2 col-sm-2"></div>
 	
 	</div>
-	<br><br><br>
+	<br><br><br><br><br>
 	<?php if($data == 'homepage'){?>
 		<div class="text-center">
 			<h4 class="text-uppercase" style="font-size: 4.6rem; color: white; font-weight: bold;">WITH HIGH QUALITY, STANDARD</h4>

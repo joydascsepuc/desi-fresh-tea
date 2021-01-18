@@ -20,7 +20,7 @@ class ProductController extends Controller
     public function index()
     {
         $justify = 'adminWork';
-        $products = Product::orderBy('created_at','desc')->get();
+        $products = Product::orderBy('created_at','asc')->get();
         return view('pages.admin.products.index')->with(array(
             'justify' => $justify,
             'products' => $products
